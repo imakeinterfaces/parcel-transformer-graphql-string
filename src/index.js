@@ -1,5 +1,6 @@
 // @flow
-import {Transformer} from '@parcel/plugin';
+const { Transformer } = require("@parcel/plugin");
+const gql = require("graphql-tag");
 
 module.exports = new Transformer({
   async transform({asset, options, resolve}) {
