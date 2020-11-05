@@ -1,0 +1,50 @@
+{
+  "name": "parcel-transformer-graphql-string",
+  "version": "0.0.4",
+  "description": "graphql-tag import plugin",
+  "main": "src/index.js",
+  "author": "imakeinterfaces",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imakeinterfaces/parcel-transformer-graphql-string.git"
+  },
+  "scripts": {
+    "lint": "eslint \"**/*.js\""
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard"
+    ],
+    "env": {
+      "node": true
+    }
+  },
+  "engines": {
+    "node": ">= 13.7.0",
+    "npm": "^6.13.7",
+    "parcel": "^2.0.0-beta.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^12.0.0-alpha.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "parcel-bundler": ">= 1.12.3 < 2",
+    "pre-commit": "^1.2.2",
+    "standard": "^11.0.1"
+  },
+  "peerDependencies": {
+    "parcel-bundler": ">2"
+  },
+  "dependencies": {
+    "cosmiconfig": "^5.0.2",
+    "loglevel": "^1.6.1"
+  }
+}
